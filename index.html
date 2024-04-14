@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/normalize.css/normalize.css"
+    />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat+Alternates:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            fontFamily: {
+              montserrat: ["Montserrat Alternates", "sans-serif"],
+            },
+            maxWidth: {
+              1440: "1440px",
+              1094: "1094px",
+              1142: "1142px",
+            },
+            fontSize: {
+              font16: "16px",
+              font32: "32px",
+              custom32: ["32px", { lineHeight: "39.01px" }],
+              "btn-custom20": ["20px", { lineHeight: "24.38px" }],
+              custom64: ["64px", { lineHeight: "78px" }],
+              custom48: ["48px", { lineHeight: "58px" }],
+            },
+            lineHeight: {
+              "line-height-19": "19.5px",
+              "line-height-39": "39.01px",
+            },
+            colors: {
+              "custom-gray": "#D8D8D8",
+              "btn-gray": "#303030",
+              "btn-yellow": "rgba(249, 216, 105, 1)",
+
+              "custom-dark-gray": "rgba(30, 30, 30, 1)",
+              "custom-mid-gray": "rgba(30, 30, 30, 0.8)",
+
+              "custom-light-gray": "rgba(216, 216, 216, 0.25)",
+            },
+            borderRadius: {
+              "br-20": "20px",
+            },
+            backgroundImage: {
+              "custom-gradient":
+                "linear-gradient(180deg, rgba(30, 30, 30, 0) 56.69%, rgba(30, 30, 30, 0.8) 80.34%, #1E1E1E 90.71%)",
+            },
+          },
+        },
+      };
+    </script>
+    <title>Крылья</title>
+  </head>
+  <body class="bg-black">
+    <section
+      class="max-w-1440 mx-auto bg-cover font-montserrat bg-contain max-h-986"
+      style="
+        background-image: url('img/banner-top.png');
+        background-repeat: no-repeat;
+      "
+    >
+      <nav class="flex justify-between items-center pt-5">
+        <div class="flex items-center gap-6 pl-[173px]">
+          <img src="img/burger.png" alt="menu" class="object-contain h-full" />
+          <span class="text-white font-bold text-lg text-center">Меню</span>
+        </div>
+
+        <div class="ml-2">
+          <img src="img/wings.png" alt="logo" class="h-full" />
+        </div>
+
+        <div class="flex items-center gap-4.5 pr-[173px] gap-[18px]">
+          <a href="#">
+            <img src="img/media/wa-logo.svg" alt="wa" class="h-full" />
+          </a>
+          <a href="#">
+            <img src="img/media/logo-tg.svg" alt="tg" class="h-full" />
+          </a>
+          <a href="#">
+            <img src="img/media/logo-phone.svg" alt="phone" class="h-full" />
+          </a>
+        </div>
+      </nav>
+
+      <div class="flex flex-col justify-center items-center pl-4 mt-[137px]">
+        <img src="img/bird.png" alt="bird" class="ml-1" />
+
+        <img
+          src="img/wings2.svg"
+          alt="space"
+          class="mt-[-52px] mr-4 scale-[1.01] fill-custom-pink"
+        />
+      </div>
+      <div class="mt-[-5px]">
+        <h2 class="text-custom-gray text-custom32 font-medium text-center">
+          Погрузитесь в мир блаженства и <br />
+          релаксации в банном комплексе «Крылья»
+        </h2>
+      </div>
+
+      <div class="bg-custom-gradient mb-[30px]">
+        <div class="flex justify-center mt-[40px]">
+          <button
+            class="text-btn-gray font-bold bg-white border-br-20 py-[20px] px-[60px] rounded-[20px] text-btn-custom20"
+          >
+            Смотреть бани
+          </button>
+        </div>
+        <div class="flex justify-center">
+          <img
+            src="img/wave.png"
+            alt="steam-wave"
+            class="mt-[205px] pb-[146px]"
+          />
+        </div>
+      </div>
+    </section>
+    <section
+      class="bg-custom-dark-gray max-w-1440 mx-auto mt-[-30px] z-0 relative"
+    >
+      <div class="flex justify-center gap-[44.5px] pb-[50px]">
+        <div class="relative">
+          <img src="img/Rectangle 3.png" alt="rec3" class="mt-[34px]" />
+          <img
+            src="img/l1.png"
+            alt="l1"
+            class="absolute left-[96px] bottom-[30px]"
+          />
+        </div>
+        <div class="relative">
+          <img src="img/Rectangle 4.png" alt="rec4" class="mt-[80px]" />
+          <img
+            src="img/l2.png"
+            alt="l2"
+            class="absolute left-[96px] bottom-[-19px]"
+          />
+        </div>
+        <div class="relative">
+          <img src="img/Rectangle 5.png" alt="rec5" /><img
+            src="img/l3.png"
+            alt="l3"
+            class="absolute left-[96px] bottom-[62px]"
+          />
+        </div>
+        <div class="relative">
+          <img src="img/Rectangle 6.png" alt="rec6" class="mt-[34px]" /><img
+            src="img/l4.png"
+            alt="l4"
+            class="absolute left-[96px] bottom-[28px]"
+          />
+        </div>
+      </div>
+    </section>
+    <section
+      class="bg-cover bg-contain bg-no-repeat bg-custom-dark-gray font-montserrat max-w-1440 mx-auto"
+      style="
+        background-image: linear-gradient(
+            180deg,
+            rgba(30, 30, 30, 0.1) 0%,
+            #232323 50%,
+            rgba(30, 30, 30, 1) 80%
+          ),
+          url('img/steam.png');
+        background-position: 50% 40%;
+        height: 986px;
+
+        background-repeat: no-repeat;
+      "
+    >
+      <div class="text-white text-center mx-auto flex flex-col">
+        <h2 class="font-bold text-custom64 pt-[60px] text-center">О нас</h2>
+        <div class="flex justify-center">
+          <p class="text-xl max-w-1094 mt-[24px] text-center">
+            Добро пожаловать в банный комплекс 'Крылья'! Мы - оазис уюта и
+            заботы о вашем здоровье. Распахните двери в мир истинного релакса,
+            где тепло бани сливается с уникальной атмосферой комфорта. Наши
+            современные сауны и парные, пропитанные духом старинных традиций,
+            приглашают вас на незабываемое путешествие к гармонии тела и духа. В
+            'Крыльях' каждый гость находит свой источник вдохновения и покоя.
+            Добро пожаловать в мир истинного отдыха и оздоровления!
+          </p>
+        </div>
+      </div>
+      <div class="mx-auto relative">
+        <div
+          class="text-center text-custom-light-gray font-bold text-custom48 max-w-1094 mx-auto relative"
+        >
+          <div class="flex justify-start pt-[140px] ml-[-24px]">РЕЛАКС...</div>
+          <div class="flex justify-end mt-[77px] mr-[87px]">
+            ОЗДОРОВЛЕНИЕ...
+          </div>
+        </div>
+        <div
+          class="flex flex-col items-center justify-center mt-[140px] bg-custom-mid-gray text-white font-montserrat font-bold"
+        >
+          <img src="img/fireplace.svg" alt="fireplace" class="mb-4" />
+          <h1 class="text-custom64 text-center">НАШИ БАНИ</h1>
+        </div>
+      </div>
+    </section>
+
+    <section class="bg-custom-dark-gray mx-auto max-w-1440">
+      <div class="flex max-w-1094 mx-auto">
+        <div>
+          <img src="img/img1.png" alt="img1" />
+          <h4 class="">Баня по белому</h4>
+          <button class="bg-btn-yellow">Подробнее</button>
+        </div>
+      </div>
+    </section>
+  </body>
+</html>
