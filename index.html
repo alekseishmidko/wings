@@ -27,12 +27,23 @@
               1440: "1440px",
               1094: "1094px",
               1142: "1142px",
+              1174: "1174px",
+            },
+            maxHeigth: {
+              960: "960px",
             },
             fontSize: {
               font16: "16px",
               font32: "32px",
               custom32: ["32px", { lineHeight: "39.01px" }],
               "btn-custom20": ["20px", { lineHeight: "24.38px" }],
+              custom14: ["14px", { lineHeight: "17px" }],
+              custom16: ["16px", { lineHeight: "19.5px" }],
+              custom20: ["20px", { lineHeight: "24.38px" }],
+              custom24: ["24px", { lineHeight: "29.26px" }],
+              custom28: ["28px", { lineHeight: "34.13px" }],
+              custom32: ["32px", { lineHeight: "44.88px" }],
+              custom36: ["36px", { lineHeight: "43.88px" }],
               custom64: ["64px", { lineHeight: "78px" }],
               custom48: ["48px", { lineHeight: "58px" }],
             },
@@ -49,13 +60,18 @@
               "custom-mid-gray": "rgba(30, 30, 30, 0.8)",
 
               "custom-light-gray": "rgba(216, 216, 216, 0.25)",
+              "custom-text-gray": "rgba(216, 216, 216, 1)",
             },
             borderRadius: {
               "br-20": "20px",
+              "br-16": "16px",
+              "br-40": "40px",
             },
             backgroundImage: {
               "custom-gradient":
                 "linear-gradient(180deg, rgba(30, 30, 30, 0) 56.69%, rgba(30, 30, 30, 0.8) 80.34%, #1E1E1E 90.71%)",
+              "edge-to-center-gradient":
+                "linear-gradient(to right, rgba(30, 30, 30, 1) 0%, rgba(255, 255, 255, 0) 50%, rgba(30, 30, 30, 1) 100%)",
             },
           },
         },
@@ -211,12 +227,652 @@
       </div>
     </section>
 
-    <section class="bg-custom-dark-gray mx-auto max-w-1440">
-      <div class="flex max-w-1094 mx-auto">
+    <section
+      class="bg-custom-dark-gray mx-auto max-w-1440 font-montserrat pb-[100px] pt-[46px]"
+    >
+      <div class="flex max-w-1094 mx-auto gap-[40px]">
         <div>
           <img src="img/img1.png" alt="img1" />
-          <h4 class="">Баня по белому</h4>
-          <button class="bg-btn-yellow">Подробнее</button>
+          <h4 class="text-white font-bold text-custom48 pt-[24px] pb-[12px]">
+            Баня по белому
+          </h4>
+          <button
+            class="bg-btn-yellow px-[40px] rounded-2xl py-[14px] font-bold text-custom16"
+          >
+            Подробнее
+          </button>
+        </div>
+        <div>
+          <h4 class="text-white font-bold text-custom48 text-end mb-[12px]">
+            Баня по черному
+          </h4>
+          <div class="flex justify-end mb-[24px]">
+            <button
+              class="bg-btn-yellow px-[40px] rounded-2xl py-[14px] font-bold text-custom16"
+            >
+              Подробнее
+            </button>
+          </div>
+          <img src="img/img2.png" alt="img2" />
+        </div>
+      </div>
+    </section>
+
+    <section class="bg-custom-dark-gray mx-auto max-w-1440">
+      <div class="relative">
+        <div class="flex gap-[40px]">
+          <img src="img/img-right.png" alt="left" class="py-[35px]" />
+          <img src="img/img-center.png" alt="center" />
+          <img src="img/img-left.png" alt="right" class="py-[35px]" />
+          <div class="absolute inset-0 bg-edge-to-center-gradient"></div>
+        </div>
+      </div>
+    </section>
+
+    <section
+      class="bg-custom-dark-gray mx-auto max-w-1440 pt-[120px] pb-[60px] font-montserrat"
+    >
+      <h2 class="mb-[60px] font-bold text-white text-custom64 text-center">
+        ПОЧЕМУ ВЫБИРАЮТ НАС
+      </h2>
+
+      <div class="max-w-1094 mx-auto">
+        <div class="grid grid-cols-3 gap-[77px]">
+          <div>
+            <img src="img/icon1.svg" alt="icon1" class="mb-[16px]" />
+            <h5 class="text-white font-bold text-custom24 mb-[12px]">
+              Новые знакомства
+            </h5>
+            <p class="text-custom-text-gray font-normal text-custom16">
+              Наш банный клуб - это пространство, где вы легко найдёте друзей и
+              единомышленников
+            </p>
+          </div>
+          <div>
+            <img src="img/icon2.svg" alt="icon1" class="mb-[16px]" />
+            <h5 class="text-white font-bold text-custom24 mb-[12px]">
+              Насыщенная программа
+            </h5>
+            <p class="text-custom-text-gray font-normal text-custom16">
+              Каждый день в наших банях проходят беседы, мастер-классы на любой
+              вкус и уникальные наборы практик
+            </p>
+          </div>
+          <div>
+            <img src="img/icon3.svg" alt="icon1" class="mb-[16px]" />
+            <h5 class="text-white font-bold text-custom24 mb-[12px]">
+              Русская баня
+            </h5>
+            <p class="text-custom-text-gray font-normal text-custom16">
+              Качественные печи, приятный пар, идеальная влажность - именно по
+              этим причинам к нам возвращаются
+            </p>
+          </div>
+          <div>
+            <img src="img/icon4.svg" alt="icon1" class="mb-[16px]" />
+            <h5 class="text-white font-bold text-custom24 mb-[12px]">Акции</h5>
+            <p class="text-custom-text-gray font-normal text-custom16">
+              Мы постоянно запускаем различные акции и выгодные предложения, а
+              также клубные абонементы
+            </p>
+          </div>
+          <div>
+            <img src="img/icon5.svg" alt="icon1" class="mb-[16px]" />
+            <h5 class="text-white font-bold text-custom24 mb-[12px]">
+              Релакс и наслаждение
+            </h5>
+            <p class="text-custom-text-gray font-normal text-custom16">
+              У нас работают профессиональные парильщики, массажисты и
+              спа-мастера - вы останетесь довольны!
+            </p>
+          </div>
+          <div>
+            <img src="img/icon6.svg" alt="icon1" class="mb-[16px]" />
+            <h5 class="text-white font-bold text-custom24 mb-[12px]">
+              Приятная атмосфера
+            </h5>
+            <p class="text-custom-text-gray font-normal text-custom16">
+              18+ пространство. У нас нельзя курить и пить алкоголь, запрещены
+              эротические взаимодействия.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section
+      class="max-w-1440 mx-auto font-montserrat h-full bg-custom-dark-gray"
+      style="
+        background-image: url('img/picture1.png');
+        background-repeat: no-repeat;
+      "
+    >
+      <div class="flex flex-col items-center justify-center py-[401px]">
+        <h3 class="text-white font-bold text-custom64 text-center mb-4">
+          БАНЯ ПО БЕЛОМУ
+        </h3>
+
+        <button
+          class="text-btn-gray font-bold bg-white py-[20px] px-[60px] rounded-[20px] text-btn-custom20"
+        >
+          Записаться
+        </button>
+      </div>
+    </section>
+
+    <section
+      class="max-w-1440 mx-auto bg-cover font-montserrat bg-custom-dark-gray pt-[60px]"
+    >
+      <div class="max-w-1174 mx-auto flex">
+        <div class="flex">
+          <div
+            class="relative justify-center items-center px-[83.5px] py-[42.5px] border-[1px] rounded-l-br-40 border-custom-light-gray"
+          >
+            <img src="img/b-white.png" alt="b-white" />
+            <img
+              src="img/arrow-top.svg"
+              alt="arrow-top"
+              class="absolute top-[36px] left-[11px]"
+            />
+            <img
+              src="img/arrow-down.svg"
+              alt="arrow-down"
+              class="absolute bottom-[36px] left-[11px]"
+            />
+          </div>
+
+          <div
+            class="border-[1px] rounded-r-br-40 border-custom-light-gray px-[40px] py-[40px]"
+          >
+            <div class="flex items-center justify-center">
+              <span class="font-bold text-custom36 text-white mr-[16px]"
+                >Баня по белому</span
+              >
+              <button
+                class="bg-white text-custom16 text-btn-gray font-bold text-center py-[10px] px-[16px] rounded-[20px]"
+              >
+                от 14 000 ₽ / чел
+              </button>
+            </div>
+
+            <!-- top -->
+            <div class="grid grid-cols-3 mt-[24px] justify-center mb-[40px]">
+              <div>
+                <p class="text-custom-text-gray text-custom14">
+                  Площадь банного комплекса
+                </p>
+                <span class="font-extrabold text-white text-custom28"
+                  >250 м2</span
+                >
+              </div>
+              <div>
+                <p class="text-custom-text-gray text-custom14">
+                  Вместимость комплекса
+                </p>
+                <span class="font-extrabold text-white text-custom28"
+                  >до 12 чел</span
+                >
+              </div>
+              <div>
+                <p class="text-custom-text-gray text-custom14">
+                  Длительность программы
+                </p>
+                <span
+                  class="font-extrabold text-white text-custom28 whitespace-nowrap"
+                  >4 часа/2 часа</span
+                >
+              </div>
+            </div>
+            <!-- line -->
+            <div class="border-[1px] border-custom-light-gray px-[-40px]"></div>
+            <!-- bottom -->
+            <div
+              class="font-normal text-custom16 text-custom-text-gray mt-[16px] border-custom-light-gray"
+            >
+              <span class="font-semibold text-custom20 text-white"
+                >Описание</span
+              >
+              <p class=" ">
+                Наш банный клуб работает по системе
+                <span class="font-semibold text-custom16 text-custom-text-gray"
+                  >«всё включено»</span
+                >.
+              </p>
+              <ul class="mt-[16px]">
+                В стоимость посещения входят:
+                <li class="flex gap-[8px] mt-[8px]">
+                  <img src="img/dot.svg" alt="dot" />аренда банного класса
+                </li>
+                <li class="flex gap-[8px] mt-[8px]">
+                  <img src="img/dot.svg" alt="dot" />авторская программа парения
+                </li>
+                <li class="flex gap-[8px] mt-[8px]">
+                  <img src="img/dot.svg" alt="dot" />приветственное угощение
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section
+      class="pt-[80px] font-montserrat max-w-1440 mx-auto bg-custom-dark-gray"
+    >
+      <div class="max-w-1174 mx-auto">
+        <h3 class="font-bold text-center text-white text-custom36">
+          Программа парения
+        </h3>
+        <div class="grid-cols-4 grid gap-[45px] pt-[40px]">
+          <div class="border-[1px] border-custom-light-gray rounded-3xl">
+            <img src="img/image1.png" alt="image1" class="mb-[24px]" />
+
+            <h5
+              class="text-custom20 font-semibold text-white mb-[8px] pl-[16px]"
+            >
+              Аромапарение
+            </h5>
+            <p
+              class="font-normal text-custom14 text-custom-gray pb-[32px] pl-[16px] pr-[23px]"
+            >
+              Аромапарение банными веерами, ароматными травами и берёзовыми
+              вениками. Умывание берёзовыми отварами, лёгкий контраст
+            </p>
+          </div>
+          <div class="border-[1px] border-custom-light-gray rounded-3xl">
+            <img src="img/image2.png" alt="image2" class="mb-[24px]" />
+
+            <h5
+              class="text-custom20 font-semibold text-white mb-[8px] pl-[16px]"
+            >
+              Основное парениe
+            </h5>
+            <p
+              class="font-normal text-custom14 text-custom-gray pb-[32px] pl-[16px] pr-[23px]"
+            >
+              Индивидуальный прогрев всего телами дубовыми вениками, прозладное
+              берёзовое дыхание, окунание в купель и догрев с берёзовым растиром
+            </p>
+          </div>
+          <div class="border-[1px] border-custom-light-gray rounded-3xl">
+            <img src="img/image3.png" alt="image3" class="mb-[24px]" />
+
+            <h5
+              class="text-custom20 font-semibold text-white pb-[8px] pl-[16px]"
+            >
+              Отдых
+            </h5>
+            <p
+              class="font-normal text-custom14 text-custom-gray pb-[32px] pl-[16px] pr-[23px]"
+            >
+              Отдохните и восстановите силы в уютной атмосфере, релаксируя в
+              тёплом чане или сеновале, наслаждаясь чашечкой чая или напитком
+            </p>
+          </div>
+          <div class="border-[1px] border-custom-light-gray rounded-3xl">
+            <img src="img/image4.png" alt="image4" class="mb-[24px]" />
+
+            <h5
+              class="text-custom20 font-semibold text-white mb-[8px] pl-[16px]"
+            >
+              Догрев
+            </h5>
+            <p
+              class="font-normal text-custom14 text-custom-gray pb-[32px] pl-[16px] pr-[23px]"
+            >
+              Мягкий самостоятельный прогрев в турецком хаммаме, маска для лица
+              с омолаживающим и успокаивающим питательным составом
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section
+      class="max-w-1440 mx-auto font-montserrat h-full bg-custom-dark-gray"
+      style="
+        background-image: url('img/b-black.png');
+        background-repeat: no-repeat;
+      "
+    >
+      <div class="flex flex-col items-center justify-center py-[401px]">
+        <h3 class="text-white font-bold text-custom64 text-center mb-4">
+          БАНЯ ПО ЧЕРНОМУ
+        </h3>
+
+        <button
+          class="text-btn-gray font-bold bg-white py-[20px] px-[60px] rounded-[20px] text-btn-custom20"
+        >
+          Записаться
+        </button>
+      </div>
+    </section>
+    <section
+      class="max-w-1440 mx-auto bg-cover font-montserrat bg-custom-dark-gray pt-[60px]"
+    >
+      <div class="max-w-1174 mx-auto flex">
+        <div class="flex">
+          <div
+            class="relative justify-center items-center px-[83.5px] py-[42.5px] border-[1px] rounded-l-br-40 border-custom-light-gray"
+          >
+            <img src="img/b-black-2.png" alt="b-white" />
+            <img
+              src="img/arrow-top.svg"
+              alt="arrow-top"
+              class="absolute top-[36px] left-[11px]"
+            />
+            <img
+              src="img/arrow-down.svg"
+              alt="arrow-down"
+              class="absolute bottom-[36px] left-[11px]"
+            />
+          </div>
+
+          <div
+            class="border-[1px] rounded-r-br-40 border-custom-light-gray px-[40px] py-[40px]"
+          >
+            <div class="flex items-center justify-center">
+              <span class="font-bold text-custom36 text-white mr-[16px]"
+                >Баня по чёрному</span
+              >
+              <button
+                class="bg-white text-custom16 text-btn-gray font-bold text-center py-[10px] px-[16px] rounded-[20px]"
+              >
+                от 20 000 ₽ / чел
+              </button>
+            </div>
+
+            <!-- top -->
+            <div class="grid grid-cols-3 mt-[24px] justify-center mb-[40px]">
+              <div>
+                <p class="text-custom-text-gray text-custom14">
+                  Площадь банного комплекса
+                </p>
+                <span class="font-extrabold text-white text-custom28"
+                  >250 м2</span
+                >
+              </div>
+              <div>
+                <p class="text-custom-text-gray text-custom14">
+                  Вместимость комплекса
+                </p>
+                <span class="font-extrabold text-white text-custom28"
+                  >до 12 чел</span
+                >
+              </div>
+              <div>
+                <p class="text-custom-text-gray text-custom14">
+                  Длительность программы
+                </p>
+                <span
+                  class="font-extrabold text-white text-custom28 whitespace-nowrap"
+                  >4 часа/2 часа</span
+                >
+              </div>
+            </div>
+            <!-- line -->
+            <div class="border-[1px] border-custom-light-gray px-[-40px]"></div>
+            <!-- bottom -->
+            <div
+              class="font-normal text-custom16 text-custom-text-gray mt-[16px] border-custom-light-gray"
+            >
+              <span class="font-semibold text-custom20 text-white"
+                >Описание</span
+              >
+              <p class=" ">
+                Наш банный клуб работает по системе
+                <span class="font-semibold text-custom16 text-custom-text-gray"
+                  >«всё включено»</span
+                >.
+              </p>
+              <ul class="mt-[16px]">
+                В стоимость посещения входят:
+                <li class="flex gap-[8px] mt-[8px]">
+                  <img src="img/dot.svg" alt="dot" />аренда банного класса
+                </li>
+                <li class="flex gap-[8px] mt-[8px]">
+                  <img src="img/dot.svg" alt="dot" />авторская программа парения
+                </li>
+                <li class="flex gap-[8px] mt-[8px]">
+                  <img src="img/dot.svg" alt="dot" />приветственное угощение
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section
+      class="pt-[80px] pb-[60px] font-montserrat max-w-1440 mx-auto bg-custom-dark-gray"
+    >
+      <div class="max-w-1174 mx-auto">
+        <h3 class="font-bold text-center text-white text-custom36">
+          Программа парения
+        </h3>
+        <div class="grid-cols-4 grid gap-[45px] pt-[40px]">
+          <div class="border-[1px] border-custom-light-gray rounded-3xl">
+            <img src="img/image1.png" alt="image1" class="mb-[24px]" />
+
+            <h5
+              class="text-custom20 font-semibold text-white mb-[8px] pl-[16px]"
+            >
+              Аромапарение
+            </h5>
+            <p
+              class="font-normal text-custom14 text-custom-gray pb-[32px] pl-[16px] pr-[23px]"
+            >
+              Аромапарение банными веерами, ароматными травами и берёзовыми
+              вениками. Умывание берёзовыми отварами, лёгкий контраст
+            </p>
+          </div>
+          <div class="border-[1px] border-custom-light-gray rounded-3xl">
+            <img src="img/image2.png" alt="image2" class="mb-[24px]" />
+
+            <h5
+              class="text-custom20 font-semibold text-white mb-[8px] pl-[16px]"
+            >
+              Основное парениe
+            </h5>
+            <p
+              class="font-normal text-custom14 text-custom-gray pb-[32px] pl-[16px] pr-[23px]"
+            >
+              Индивидуальный прогрев всего телами дубовыми вениками, прозладное
+              берёзовое дыхание, окунание в купель и догрев с берёзовым растиром
+            </p>
+          </div>
+          <div class="border-[1px] border-custom-light-gray rounded-3xl">
+            <img src="img/image3.png" alt="image3" class="mb-[24px]" />
+
+            <h5
+              class="text-custom20 font-semibold text-white pb-[8px] pl-[16px]"
+            >
+              Отдых
+            </h5>
+            <p
+              class="font-normal text-custom14 text-custom-gray pb-[32px] pl-[16px] pr-[23px]"
+            >
+              Отдохните и восстановите силы в уютной атмосфере, релаксируя в
+              тёплом чане или сеновале, наслаждаясь чашечкой чая или напитком
+            </p>
+          </div>
+          <div class="border-[1px] border-custom-light-gray rounded-3xl">
+            <img src="img/image4.png" alt="image4" class="mb-[24px]" />
+
+            <h5
+              class="text-custom20 font-semibold text-white mb-[8px] pl-[16px]"
+            >
+              Догрев
+            </h5>
+            <p
+              class="font-normal text-custom14 text-custom-gray pb-[32px] pl-[16px] pr-[23px]"
+            >
+              Мягкий самостоятельный прогрев в турецком хаммаме, маска для лица
+              с омолаживающим и успокаивающим питательным составом
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section
+      class="max-w-1440 mx-auto font-montserrat h-full bg-custom-dark-gray"
+      style="
+        background-image: url('img/house.png');
+        background-repeat: no-repeat;
+      "
+    >
+      <div
+        class="flex flex-col items-center justify-center pb-[401px] pt-[368px]"
+      >
+        <img src="img/l2-large.svg" alt="l2" class="pb-[16px]" />
+        <h3 class="text-white font-bold text-custom64 text-center mb-4">
+          АРЕНДА ДОМА
+        </h3>
+
+        <button
+          class="text-btn-gray font-bold bg-white py-[20px] px-[60px] rounded-[20px] text-btn-custom20"
+        >
+          Оставить заявку
+        </button>
+      </div>
+    </section>
+    <section
+      class="max-w-1440 mx-auto bg-cover font-montserrat bg-custom-dark-gray pt-[60px] pb-[120px]"
+    >
+      <div class="max-w-1174 mx-auto flex">
+        <div class="flex">
+          <div
+            class="relative justify-center items-center px-[83.5px] py-[42.5px] border-[1px] rounded-l-br-40 border-custom-light-gray"
+          >
+            <img src="img/house-rent.png" alt="b-white" />
+            <img
+              src="img/arrow-top.svg"
+              alt="arrow-top"
+              class="absolute top-[36px] left-[11px]"
+            />
+            <img
+              src="img/arrow-down.svg"
+              alt="arrow-down"
+              class="absolute bottom-[36px] left-[11px]"
+            />
+          </div>
+
+          <div
+            class="border-[1px] rounded-r-br-40 border-custom-light-gray px-[40px] py-[40px]"
+          >
+            <div class="flex items-center justify-center">
+              <span class="font-bold text-custom36 text-white mr-[16px]"
+                >Аренда дома</span
+              >
+              <button
+                class="bg-white text-custom16 text-btn-gray font-bold text-center py-[10px] px-[16px] rounded-[20px]"
+              >
+                от 20 000 ₽ / чел
+              </button>
+            </div>
+
+            <!-- top -->
+            <div class="grid grid-cols-3 mt-[24px] justify-center mb-[40px]">
+              <div>
+                <p class="text-custom-text-gray text-custom14">
+                  Площадь банного комплекса
+                </p>
+                <span class="font-extrabold text-white text-custom28"
+                  >250 м2</span
+                >
+              </div>
+              <div>
+                <p class="text-custom-text-gray text-custom14">
+                  Вместимость комплекса
+                </p>
+                <span class="font-extrabold text-white text-custom28"
+                  >до 12 чел</span
+                >
+              </div>
+              <div>
+                <p class="text-custom-text-gray text-custom14">
+                  Длительность программы
+                </p>
+                <span
+                  class="font-extrabold text-white text-custom28 whitespace-nowrap"
+                  >4 часа/2 часа</span
+                >
+              </div>
+            </div>
+            <!-- line -->
+            <div class="border-[1px] border-custom-light-gray px-[-40px]"></div>
+            <!-- bottom -->
+            <div
+              class="font-normal text-custom16 text-custom-text-gray mt-[16px] border-custom-light-gray"
+            >
+              <span class="font-semibold text-custom20 text-white"
+                >Описание</span
+              >
+              <p class=" ">
+                Наш банный клуб работает по системе
+                <span class="font-semibold text-custom16 text-custom-text-gray"
+                  >«всё включено»</span
+                >.
+              </p>
+              <ul class="mt-[16px]">
+                В стоимость посещения входят:
+                <li class="flex gap-[8px] mt-[8px]">
+                  <img src="img/dot.svg" alt="dot" />аренда банного класса
+                </li>
+                <li class="flex gap-[8px] mt-[8px]">
+                  <img src="img/dot.svg" alt="dot" />авторская программа парения
+                </li>
+                <li class="flex gap-[8px] mt-[8px]">
+                  <img src="img/dot.svg" alt="dot" />приветственное угощение
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section
+      class="max-w-1440 mx-auto bg-cover font-montserrat bg-custom-dark-gray relative"
+      style="
+        background-image: url('img/cloud.png');
+        height: fit-content;
+        background-repeat: no-repeat;
+        background-position: 0% 0%;
+        background-size: 70%;
+      "
+    >
+      <img
+        src="img/eagle.png"
+        alt="eagle"
+        class="absolute top-[105px] left-[64px]"
+      />
+      <div class="flex justify-end mr-[132px] pb-[47px]">
+        <div class="text-white w-[495px]">
+          <h2 class="font-bold text-custom48">Подарите сертификат</h2>
+          <h3 class="font-medium text-custom32 mb-[24px]">
+            на посещение бани себе или близким
+          </h3>
+          <p class="font-normal text-custom20">
+            Просто оставьте свои контактные данные в форме ниже и наш менеджер
+            свяжется с вами, поможет выбрать тариф и уточнит все детали.
+          </p>
+
+          <div class="flex flex-col gap-[24px]">
+            <input
+              type="text"
+              placeholder="Ваше имя"
+              class="w-[495px] rounded-[16px] py-[20px] px-[24px] bg-btn-gray text-custom20 text-white"
+            />
+            <input
+              type="text"
+              placeholder="Ваш телефон"
+              class="w-[495px] rounded-[16px] py-[20px] px-[24px] bg-btn-gray text-custom20 text-white"
+            />
+
+            <button
+              class="bg-btn-yellow px-[60px] rounded-2xl py-[20px] font-bold text-custom20 mr-auto text-btn-gray mt-[32px]"
+            >
+              Отправить
+            </button>
+          </div>
         </div>
       </div>
     </section>
