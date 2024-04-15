@@ -23,11 +23,15 @@
             fontFamily: {
               montserrat: ["Montserrat Alternates", "sans-serif"],
             },
+            screens: {
+              sm: "570px",
+            },
             maxWidth: {
               1440: "1440px",
               1094: "1094px",
               1142: "1142px",
               1174: "1174px",
+              570: "570px",
             },
             maxHeigth: {
               960: "960px",
@@ -79,7 +83,7 @@
     </script>
     <title>Крылья</title>
   </head>
-  <body class="bg-black">
+  <body class="bg-custom-dark-gray">
     <section
       class="max-w-1440 mx-auto bg-cover font-montserrat bg-contain max-h-986"
       style="
@@ -87,8 +91,8 @@
         background-repeat: no-repeat;
       "
     >
-      <nav class="flex justify-between items-center pt-5">
-        <div class="flex items-center gap-6 pl-[173px]">
+      <nav class="flex justify-between items-center pt-5 max-w-1094 mx-auto">
+        <div class="flex items-center gap-6">
           <img src="img/burger.png" alt="menu" class="object-contain h-full" />
           <span class="text-white font-bold text-lg text-center">Меню</span>
         </div>
@@ -97,7 +101,7 @@
           <img src="img/wings.png" alt="logo" class="h-full" />
         </div>
 
-        <div class="flex items-center gap-4.5 pr-[173px] gap-[18px]">
+        <div class="flex items-center gap-4.5 gap-[18px]">
           <a href="#">
             <img src="img/media/wa-logo.svg" alt="wa" class="h-full" />
           </a>
@@ -129,7 +133,7 @@
       <div class="bg-custom-gradient mb-[30px]">
         <div class="flex justify-center mt-[40px]">
           <button
-            class="text-btn-gray font-bold bg-white border-br-20 py-[20px] px-[60px] rounded-[20px] text-btn-custom20"
+            class="text-btn-gray font-bold bg-white border-br-20 py-[20px] px-[60px] rounded-[20px] text-btn-custom20 cursor-pointer"
           >
             Смотреть бани
           </button>
@@ -872,6 +876,147 @@
             >
               Отправить
             </button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section
+      class="pt-[80px] pb-[120px] font-montserrat max-w-1440 mx-auto bg-custom-dark-gray"
+    >
+      <div class="max-w-1174 mx-auto">
+        <div class="flex items-center justify-center flex-col">
+          <img src="img/l3-large.svg" alt="l3-large  " class="mb-[16px]" />
+          <h3 class="font-bold text-center text-white text-custom36">
+            Расписание клубных дней
+          </h3>
+        </div>
+        <div class="grid-cols-4 grid gap-[45px] pt-[40px]">
+          <div class="border-[1px] border-custom-light-gray rounded-3xl">
+            <img src="img/image5.png" alt="image5" class="mb-[24px]" />
+            <h5 class="font-bold text-custom14 text-btn-yellow pl-[16px]">
+              11:00 - 17:00
+            </h5>
+
+            <h5
+              class="text-custom20 font-semibold text-white mb-[8px] pl-[16px]"
+            >
+              Суббота
+            </h5>
+            <p
+              class="font-normal text-custom14 text-custom-gray pb-[32px] pl-[16px] pr-[23px]"
+            >
+              Программа парения, релаксации и хаммам
+            </p>
+          </div>
+          <div class="border-[1px] border-custom-light-gray rounded-3xl">
+            <img src="img/image6.png" alt="image6" class="mb-[24px]" />
+            <h5 class="font-bold text-custom14 text-btn-yellow pl-[16px]">
+              11:00 - 17:00
+            </h5>
+
+            <h5
+              class="text-custom20 font-semibold text-white mb-[8px] pl-[16px]"
+            >
+              Воскресенье
+            </h5>
+            <p
+              class="font-normal text-custom14 text-custom-gray pb-[32px] pl-[16px] pr-[23px]"
+            >
+              Программа парения, релаксации и хаммам
+            </p>
+          </div>
+          <div class="border-[1px] border-custom-light-gray rounded-3xl">
+            <img src="img/image7.png" alt="image7" class="mb-[24px]" />
+            <h5 class="font-bold text-custom14 text-btn-yellow pl-[16px]">
+              11:00 - 17:00
+            </h5>
+
+            <h5
+              class="text-custom20 font-semibold text-white pb-[8px] pl-[16px]"
+            >
+              Понедельник
+            </h5>
+            <p
+              class="font-normal text-custom14 text-custom-gray pb-[32px] pl-[16px] pr-[23px]"
+            >
+              Программа парения, релаксации и хаммам
+            </p>
+          </div>
+          <div class="border-[1px] border-custom-light-gray rounded-3xl">
+            <img src="img/image8.png" alt="image8" class="mb-[24px]" />
+            <h5 class="font-bold text-custom14 text-btn-yellow pl-[16px]">
+              11:00 - 17:00
+            </h5>
+
+            <h5
+              class="text-custom20 font-semibold text-white mb-[8px] pl-[16px]"
+            >
+              Вторник
+            </h5>
+            <p
+              class="font-normal text-custom14 text-custom-gray pb-[32px] pl-[16px] pr-[23px]"
+            >
+              Программа парения, релаксации и хаммам
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section
+      class="font-montserrat max-w-1440 mx-auto bg-custom-dark-gray pb-[40px]"
+    >
+      <div class="max-w-1174 mx-auto">
+        <div class="flex items-center justify-center flex-col">
+          <img src="img/white-wings.svg" alt="white-wings" />
+        </div>
+
+        <div class="flex justify-between items-center mt-[24px]">
+          <div class="text-white font-bold text-custom16">
+            <p class="font-normal text-custom-gray text-custom14">Телефон</p>
+            <h4 class="mt-[4px]">8 (953) 008- 59-88</h4>
+          </div>
+          <div class="text-white font-bold text-custom16">
+            <p class="font-normal text-custom-gray text-custom14">Адрес</p>
+            <h4 class="mt-[4px]">г. Екатеринбруг, ул. Пушкина 7</h4>
+          </div>
+          <div class="text-white font-bold text-custom16">
+            <p class="font-normal text-custom-gray text-custom14">
+              График работы
+            </p>
+            <h4 class="mt-[4px]">С 9:00 до 19:00</h4>
+          </div>
+          <div class="text-white font-bold text-custom16">
+            <p class="font-normal text-custom-gray text-custom14">Связь</p>
+            <div class="flex gap-[12px] mt-[4px]">
+              <img src="img/wa-small.svg" alt="wa-small" />
+              <img src="img/tg-small.svg" alt="tg-small" />
+            </div>
+          </div>
+          <div>
+            <button
+              class="text-btn-gray font-bold bg-white py-[12px] px-[40px] rounded-[20px] text-btn-custom14"
+            >
+              Записаться
+            </button>
+          </div>
+        </div>
+      </div>
+      <div
+        class="max-w-1174 mx-auto mt-[40px] border-[1px] border-custom-light-gray px-[-40px]"
+      ></div>
+
+      <div class="max-w-1174 mx-auto">
+        <div
+          class="flex items-center justify-between mt-[20px] font-normal text-custom14 text-custom-gray"
+        >
+          <p>2024. Все права защищены</p>
+          <p>Политика конфиденциальности</p>
+          <p>Условия обработки данных</p>
+          <div class="flex items-center gap-[8px]">
+            <p>Сайт разработан:</p>
+            <img src="img/la-chatte-logo.svg" alt="la-chatte-logo" />
           </div>
         </div>
       </div>
